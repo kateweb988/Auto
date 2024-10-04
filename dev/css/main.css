@@ -970,7 +970,13 @@ ul.info li {
   .calc__prev {
     width: 151px;
     height: 72px;
+    cursor: pointer;
     margin-top: 10px; }
+    .calc__prev:hover {
+      background: black;
+      color: white;
+      border: 1px solid #000;
+    }
 
 .info {
   position: relative;
@@ -1700,11 +1706,11 @@ ul.info li {
     width: 47%; }
   .calc2__flex {
     width: 100%;
-    flex-direction: column-reverse; }
+    flex-direction: column; }
   .calc2__flex p {
     text-align: center;
     margin-left: 0;
-    margin-bottom: 15px; }
+    margin-top: 15px; }
   .calc2 .calc__form button {
     width: 100%; }
   .rev__arrows {
@@ -1729,11 +1735,11 @@ ul.info li {
   .nav__box {
     justify-content: flex-start; }
   .header__flex {
-    flex-direction: column-reverse; }
+    flex-direction: column; }
   .header__flex a {
     margin-right: 0;
     width: 100%;
-    margin-top: 15px; }
+    margin-bottom: 15px; }
   .popup {
     width: 95%;
     height: auto;
@@ -1855,7 +1861,9 @@ ul.info li {
     font-size: 14px; }
   .calc__form input {
     margin-right: 0;
-    height: 60px; } }
+    height: 60px; }
+  .calc3__item:nth-child(n+3) {
+    margin-bottom: 40px; } }
 
 @media screen and (max-width: 576px) {
   button:active, button:focus {
@@ -1955,4 +1963,12 @@ ul.info li {
   .panel__text, .panel__text2 {
     margin-top: 20px; }
   .footer__block .nav__socials {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .why__item_1 {
+    order: 3; }
+  .why__item_2 {
+    order: 2; }
+  .why__pic {
+    order: 1; }
+  .why {
+    padding-bottom: 60px; } }
